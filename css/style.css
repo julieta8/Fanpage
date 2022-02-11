@@ -14,6 +14,55 @@
     font-size: 20px;
     color: #ff0dc2; }
 
+.grilla .header .nav .nav-ul, .bodyEntradas .grillaEntradas .header .nav .nav-ul, .bodyContacto .header .nav .nav-ul {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color: #ffffdb;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%; }
+
+.grilla .header .divHeader, .bodyEntradas .grillaEntradas .header .divHeader, .bodyContacto .header .divHeader {
+  height: 55px;
+  background-color: #ff0dc2;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white; }
+
+.grilla .header .divHeader .parrafoHeader, .bodyEntradas .grillaEntradas .header .divHeader .parrafoHeader, .bodyContacto .header .divHeader .parrafoHeader {
+  font-family: "Yellowtail", cursive;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 13px; }
+
+.grilla .mainIndex .tituloMain, .bodyEntradas .grillaEntradas .mainEntrada .tituloMain, .bodyContacto .mainContacto .tituloMain {
+  margin-top: 15px;
+  font-size: 18px;
+  font-family: "Yellowtail", cursive;
+  background-color: #ffffdb;
+  color: #ff0dc2;
+  border: 1px solid white;
+  width: 100%;
+  border-radius: 10px;
+  padding: 3px;
+  box-shadow: 5px 5px 15px #ff0dc2; }
+
+.grilla footer, .bodyEntradas .grillaEntradas footer, .bodyContacto .footerContacto {
+  background-color: #ff0dc2;
+  font-family: "Yellowtail", cursive;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
 .grilla {
   display: grid;
   grid-template-columns: 1fr;
@@ -24,51 +73,18 @@
     grid-area: header; }
     .grilla .header .nav {
       height: 20px; }
-      .grilla .header .nav .nav-ul {
-        display: flex;
-        justify-content: center;
-        justify-content: space-evenly;
-        background-color: #ffffdb;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%; }
-        .grilla .header .nav .nav-ul .li {
-          list-style: none;
-          margin-right: 5px; }
+      .grilla .header .nav .nav-ul .li {
+        list-style: none;
+        margin-right: 5px; }
     .grilla .header ul.nav-ul {
       height: 40px; }
     .grilla .header .imgHeader {
       margin-top: 20px;
       width: 100%; }
-    .grilla .header .divHeader {
-      height: 55px;
-      background-color: #ff0dc2;
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      color: white; }
-      .grilla .header .divHeader .parrafoHeader {
-        font-family: "Yellowtail", cursive;
-        font-weight: bold;
-        font-size: 15px;
-        margin-top: 13px; }
   .grilla .main {
     grid-area: main; }
   .grilla .mainIndex {
     background-color: #ffe7ee; }
-    .grilla .mainIndex .tituloMain {
-      margin-top: 15px;
-      font-size: 18px;
-      font-family: "Yellowtail", cursive;
-      background-color: #ffffdb;
-      color: #ff0dc2;
-      border: 1px solid white;
-      width: 100%;
-      border-radius: 10px;
-      padding: 3px;
-      box-shadow: 5px 5px 15px #ff0dc2; }
     .grilla .mainIndex .grid-capitulos {
       display: grid;
       grid-template-columns: 1fr;
@@ -121,17 +137,6 @@
         margin-top: 17px;
         border: 5px solid #ff0dc2;
         border-radius: 33px; }
-  .grilla footer {
-    background-color: #ff0dc2;
-    font-family: "Yellowtail", cursive;
-    font-weight: bold;
-    font-size: 15px;
-    color: white;
-    grid-area: footer;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
 
 @media screen and (min-width: 720px) {
   .grilla {
@@ -163,50 +168,17 @@
       grid-area: header; }
       .bodyEntradas .grillaEntradas .header .nav {
         height: 20px; }
-        .bodyEntradas .grillaEntradas .header .nav .nav-ul {
-          display: flex;
-          justify-content: center;
-          justify-content: space-evenly;
-          background-color: #ffffdb;
-          flex-direction: row;
-          justify-content: space-evenly;
-          align-items: center;
-          width: 100%; }
-          .bodyEntradas .grillaEntradas .header .nav .nav-ul .li {
-            list-style: none;
-            margin-right: 5px; }
+        .bodyEntradas .grillaEntradas .header .nav .nav-ul .li {
+          list-style: none;
+          margin-right: 5px; }
       .bodyEntradas .grillaEntradas .header ul.nav-ul {
         height: 40px; }
       .bodyEntradas .grillaEntradas .header .imgHeader {
         width: 100%;
         margin-top: 20px; }
-      .bodyEntradas .grillaEntradas .header .divHeader {
-        height: 55px;
-        background-color: #ff0dc2;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        color: white; }
-        .bodyEntradas .grillaEntradas .header .divHeader .parrafoHeader {
-          font-family: "Yellowtail", cursive;
-          font-weight: bold;
-          font-size: 15px;
-          margin-top: 13px; }
     .bodyEntradas .grillaEntradas .mainEntrada {
       grid-area: main;
       background-color: #ffe7ee; }
-      .bodyEntradas .grillaEntradas .mainEntrada .tituloMain {
-        margin-top: 15px;
-        font-size: 18px;
-        font-family: "Yellowtail", cursive;
-        background-color: #ffffdb;
-        color: #ff0dc2;
-        border: 1px solid white;
-        width: 100%;
-        border-radius: 10px;
-        padding: 3px;
-        box-shadow: 5px 5px 15px #ff0dc2; }
       .bodyEntradas .grillaEntradas .mainEntrada .divEntrada {
         display: flex;
         flex-direction: row;
@@ -259,17 +231,6 @@
           margin-top: 17px;
           border: 5px solid #ff0dc2;
           border-radius: 33px; }
-    .bodyEntradas .grillaEntradas footer {
-      background-color: #ff0dc2;
-      font-family: "Yellowtail", cursive;
-      font-weight: bold;
-      font-size: 15px;
-      color: white;
-      grid-area: footer;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
 
 @media screen and (min-width: 720px) {
   .bodyEntradas .grillaEntradas {
@@ -301,51 +262,18 @@
     flex-direction: column; }
     .bodyContacto .header .nav {
       height: 20px; }
-      .bodyContacto .header .nav .nav-ul {
-        display: flex;
-        justify-content: center;
-        justify-content: space-evenly;
-        background-color: #ffffdb;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%; }
-        .bodyContacto .header .nav .nav-ul .li {
-          list-style: none;
-          margin-right: 5px; }
+      .bodyContacto .header .nav .nav-ul .li {
+        list-style: none;
+        margin-right: 5px; }
     .bodyContacto .header ul.nav-ul {
       height: 40px; }
     .bodyContacto .header .imgHeader {
       height: 100%;
       margin-top: 20px; }
-    .bodyContacto .header .divHeader {
-      height: 55px;
-      background-color: #ff0dc2;
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      color: white; }
-      .bodyContacto .header .divHeader .parrafoHeader {
-        font-family: "Yellowtail", cursive;
-        font-weight: bold;
-        font-size: 15px;
-        margin-top: 13px; }
   .bodyContacto .mainContacto {
     background-image: url(https://im.vsco.co/aws-us-west-2/47ce69/27011562/5ba7df8defe3346aafa3a066/vsco5ba7df8f03e4e.jpg?w=412&dpr=2.625);
     height: 608px;
     padding: 5px; }
-    .bodyContacto .mainContacto .tituloMain {
-      margin-top: 15px;
-      font-size: 18px;
-      font-family: "Yellowtail", cursive;
-      background-color: #ffffdb;
-      color: #ff0dc2;
-      border: 1px solid white;
-      width: 100%;
-      border-radius: 10px;
-      padding: 3px;
-      box-shadow: 5px 5px 15px #ff0dc2; }
     .bodyContacto .mainContacto .formContacto {
       display: flex;
       flex-direction: column;
@@ -385,17 +313,6 @@
           flex-direction: row;
           justify-content: center;
           margin-top: 10px; }
-  .bodyContacto .footerContacto {
-    background-color: #ff0dc2;
-    font-family: "Yellowtail", cursive;
-    font-weight: bold;
-    font-size: 15px;
-    color: white;
-    grid-area: footer;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
 
 @media screen and (min-width: 720px) {
   .bodyContacto .mainContacto .tituloMain {

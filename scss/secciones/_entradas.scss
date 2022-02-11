@@ -16,7 +16,6 @@
 
             .header { 
                 display: flex;
-               
                 flex-direction: column;
                 grid-area: header;
 
@@ -25,14 +24,7 @@
                         height: 20px;
         
                         .nav-ul {
-                            display: flex;
-                            justify-content: center;
-                            justify-content: space-evenly;
-                            background-color: $colorAmarillo;
-                            flex-direction: row;
-                            justify-content: space-evenly;
-                            align-items: center;
-                            width: 100%;
+                            @extend %nav-ul;
                             .li {
                                 list-style: none;
                                 margin-right: 5px;
@@ -55,20 +47,11 @@
                         margin-top: 20px;
                     }
                     .divHeader {
-                        height: 55px;
-                        background-color: $colorFucsia;
-                        display: flex;
-                        align-content: center;
-                        justify-content: center;
-                        flex-wrap: wrap;
-                        color: white;
+                        @extend %div-header;
 
         
                         .parrafoHeader {
-                            font-family: $font;
-                            font-weight: bold;
-                            font-size: 15px;
-                            margin-top: 13px;
+                            @extend %parrafoHeader;
                         }
                     }
                 }
@@ -78,16 +61,7 @@
                     background-color: $colorRosa;
 
                     .tituloMain {
-                        margin-top: 15px;
-                        font-size: 18px;
-                        font-family: $font;
-                        background-color: $colorAmarillo;
-                        color: $colorFucsia;
-                        border: 1px solid white;
-                        width: 100%;
-                        border-radius: 10px;
-                        padding: 3px;
-                        box-shadow: 5px 5px 15px $colorFucsia;
+                        @extend %tituloMain;
                     }
 
                     .divEntrada {
@@ -98,7 +72,6 @@
                         justify-content: space-evenly;
 
                         .divImagEntradas {
-                            
                             padding-bottom: 18px;
                             padding-left: 10px;
                             border-radius: 50px;
@@ -137,8 +110,6 @@
                 .asideEntradas {
                     grid-area: aside;
                     @include aside ($colorAmarillo, 3px, auto, 1rem);
-
-
                     
 
                     .imagenesAside {
@@ -162,21 +133,12 @@
                 }
 
                 footer {
-                    background-color: $colorFucsia;
-                    font-family: $font;
-                    font-weight: bold;
-                    font-size: 15px;
-                    color: white;
-                    grid-area: footer;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
+                    @extend %footer;
                 }
     }
 }
 
-//media queries
+//MEDIA QUERIES
 
 //Para tablet
 @media screen and (min-width: 720px) {
@@ -198,14 +160,14 @@
                     }
                 }
             
-    }
-    }
+            }
+         }
     
-}
+    }
 
 
 
-
+// MEDIA QUERIES
 //Para escritorio:
 
 @media screen and (min-width: 1200px) {
