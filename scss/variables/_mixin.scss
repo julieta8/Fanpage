@@ -1,0 +1,6 @@
+@mixin aside ($background, $margin, $height, $padding) {
+    background-color: $background;
+    margin-right: $margin;
+    height: $height;
+    padding: $padding;
+} 

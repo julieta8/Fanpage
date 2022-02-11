@@ -1,21 +1,23 @@
-@import "./secciones/index";
-@import "./secciones/entradas";
-@import "./secciones/contacto";
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
     } 
+
+@import "./variables/variables";
+@import "./variables/extend";
+@import "./variables/mixin";
+
+
+@import "./secciones/index";
+@import "./secciones/entradas";
+@import "./secciones/contacto";
+
+
     
 body {
-    // display: flex;
     background-image: url("https://i.pinimg.com/474x/28/22/b3/2822b3872b2b0a227f1f0086c01c7bca.jpg");
     background-size: 8rem;
-    // justify-content: center;
-    // flex-wrap: wrap;
-    // justify-content: space-around;
     width: 80%;
     margin: 0 auto;
 }

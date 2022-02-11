@@ -6,12 +6,7 @@
 
     .header { 
         display: flex;
-        // width: 1100px;
-        /* background-color: white; */
         flex-direction: column;
-        // grid-area: header;
-        // border-right: 5px solid white;
-        // border-left: 5px solid white;
 
         .nav {
             height: 20px;
@@ -20,28 +15,18 @@
                 display: flex;
                     justify-content: center;
                     justify-content: space-evenly;
-                    // height: 60px;
-                    background-color: rgb(255, 255, 219);
+                    background-color: $colorAmarillo;
                     flex-direction: row;
                     justify-content: space-evenly;
                     align-items: center;
-                    // height: 40px;
-                     width: 100%;
+                    width: 100%;
                 
                 .li {
                     list-style: none;
                     margin-right: 5px;
                     
                     .a {
-                        text-decoration: none;
-                        color: rgb(255, 13, 194);
-                        font-family: 'Josefin Sans', sans-serif;
-                        font-weight: bold;
-                        font-size: 17px;
-                        &:hover {
-                            font-size: 20px;
-                            color: rgb(255, 13, 194);
-                        }
+                        @extend %estilosA;
                     }
                 }
                 
@@ -58,18 +43,16 @@
             margin-top: 20px;
         }
         .divHeader {
-            // width: 1095px;
             height: 55px;
-            background-color: rgb(255, 13, 194);
+            background-color: $colorFucsia;
             display: flex;
             align-content: center;
             justify-content: center;
             flex-wrap: wrap;
             color: white;
-            // border-right: 5px solid white;
 
             .parrafoHeader {
-                font-family: 'Yellowtail', cursive;
+                font-family: $font;
                 font-weight: bold;
                 font-size: 15px;
                 margin-top: 13px;
@@ -78,31 +61,23 @@
     }
 
     .mainContacto {
-        /* background-color: white; */
         background-image: url(https://im.vsco.co/aws-us-west-2/47ce69/27011562/5ba7df8defe3346aafa3a066/vsco5ba7df8f03e4e.jpg?w=412&dpr=2.625);
         height: 608px;
         padding: 5px;
-        // height: 600px;
-        // border-right: 5px solid white;
-        // border-left: 5px solid white;
-        // width: 1100px;
 
         .tituloMain {
             margin-top: 15px;
             font-size: 18px;
-            font-family: 'Yellowtail', cursive;
-            background-color: rgb(255, 255, 219);
-            color: rgb(255, 13, 194);
+            font-family: $font;
+            background-color: $colorAmarillo;
+            color: $colorFucsia;
             border: 1px solid white;
             width: 100%;
             border-radius: 10px;
             padding: 3px;
-            box-shadow: 5px 5px 15px rgb(255, 13, 194);
+            box-shadow: 5px 5px 15px $colorFucsia;
         }
 
-        // .tituloContactanos {
-        //     width: 220px;
-        // }
 
         .formContacto {
             display: flex;
@@ -119,10 +94,7 @@
                 justify-content: center;
                 align-items: stretch;
 
-                .contenedor {
-                    // display: flex;
-                    // flex-direction: row;
-                    // justify-content: space-evenly;
+                .contenedor {   
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -136,15 +108,15 @@
                         .input {
                             padding: 5px;
                             border-radius: 5px;
-                            border: 2px solid rgb(255, 13, 194);
-                            caret-color: rgb(255, 13, 194);
+                            border: 2px solid $colorFucsia;
+                            caret-color: $colorFucsia;
                             width: 160px;
                             margin: 4px;
                         }
                         
                     }
                     .textarea {
-                        border: 2px solid rgb(255, 13, 194);
+                        border: 2px solid $colorFucsia;
                         padding: 5px;
                         border-radius: 5px;
                         width: 200px;
@@ -164,8 +136,8 @@
     }
 
     .footerContacto {
-        background-color: rgb(255, 13, 194);
-        font-family: 'Yellowtail', cursive;
+        background-color: $colorFucsia;
+        font-family: $font;
         font-weight: bold;
         font-size: 15px;
         color: white;

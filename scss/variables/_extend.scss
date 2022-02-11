@@ -1,0 +1,12 @@
+%estilosA {
+    text-decoration: none;
+    text-decoration: none;
+    color: $colorFucsia;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+        &:hover {
+                font-size: 20px;
+                color: $colorFucsia;
+        }
+}
