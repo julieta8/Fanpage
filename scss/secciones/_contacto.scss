@@ -5,8 +5,7 @@
     margin: 0 auto;
 
     .header { 
-        display: flex;
-        flex-direction: column;
+        @extend %header;
 
         .nav {
             height: 20px;
@@ -26,15 +25,16 @@
             }
 
         }
+        
         ul.nav-ul {
             height: 40px;
         }
-
 
         .imgHeader {
             height: 100%;
             margin-top: 20px;
         }
+
         .divHeader {
             @extend %div-header;
 
@@ -52,7 +52,6 @@
         .tituloMain {
             @extend %tituloMain;
         }
-
 
         .formContacto {
             display: flex;
@@ -90,6 +89,7 @@
                         }
                         
                     }
+
                     .textarea {
                         border: 2px solid $colorFucsia;
                         padding: 5px;
